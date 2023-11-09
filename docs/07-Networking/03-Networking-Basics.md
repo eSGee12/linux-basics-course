@@ -16,15 +16,18 @@
   DEFAULT group default qlen 1000
   ```
 
-  -  To connect to the switch we use **`ip addr add`** command
+  -  To connect to the switch on each system, we use **`ip addr add`** command
 
   ```
   [~]$ ip addr add 192.168.1.10/24 dev eth0
+
+  [~]$ ip addr add 192.168.1.11/24 dev eth0
   ```
 
   #### Routing
 
-  - Router helps to connect to two seprate networks together.
+  - Router helps to connect to two separate networks together through a gateway or route
+  - we configure an IP Address for the router on both networks (switches)
 
     ![route](../../images//routing.PNG)
 
